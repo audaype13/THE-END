@@ -4,7 +4,9 @@ from telegram.ext import ContextTypes
 import config
 from keyboards import get_dev_keyboard, get_admin_keyboard, get_user_keyboard
 from utils import send_notification_to_admins
-
+def get_db():
+    import database as db
+    return db
 async def check_force_sub(bot, user_id: int, channel: str) -> bool:
     """يتحقق إذا المستخدم مشترك في قناة الاشتراك الإجباري"""
     try:
