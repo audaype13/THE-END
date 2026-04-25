@@ -1,6 +1,6 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ContextTypes
-import database as db
+#import database as db
 import config
 from keyboards import get_dev_keyboard, get_admin_keyboard, get_user_keyboard
 from utils import send_notification_to_admins
